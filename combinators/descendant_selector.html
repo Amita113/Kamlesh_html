@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* space is descendant selector*/
+div.one p {
+  background-color: yellow;
+}
+div.two ~ p{
+  background-color: blue;
+}
+div.three > p{
+  background-color: crimson;
+}
+div.four+p{
+  background-color: goldenrod;
+}
+</style>
+</head>
+<body>
+
+<h2>Descendant Selector</h2>
+<!-- Descendant Selector -->
+
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div class="one">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+ <!-- general sibling selector -->
+<div class="two">
+  <p>para for testing</p>
+</div>
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+</ul>
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+ <!-- child selector -->
+
+ <div class="three">
+  <p>this is the direct child one</p>
+  <p>this is the direct child two</p>
+  <section>
+    <p>this is the grand child of div </p>
+  </section>
+ </div>
+ <div class="four">
+  <p>its not sibling but child </p>
+  <p>second sibling</p>
+  <p>third sibling</p>
+ </div>
+ <p>adjacent sibling </p>
+</body>
+</html>
+
+

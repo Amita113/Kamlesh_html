@@ -1,0 +1,41 @@
+<!-- The cubic-bezier() function is an inbuilt function in CSS which is used to defines a Cubic Bezier curve. 
+A Bezier curve is a mathematically defined curve used in two-dimensional graphic applications like adobe illustrator, inkscape etc. The curve is defined by four points: the initial position and the terminating position i.e P0 and P3 respectively (which are called “anchors”) and two separate middle points i.e P1 and P2(which are called “handles”) in our example. Bezier curves are frequently used in computer graphics, animation, modeling etc.
+Syntax: 
+ 
+
+cubic-bezier( x1, y1, x2, y2 )
+Parameters: This function accepts four parameter which is mandatory. It contains a numeric value and the value of x1 and x2 lies between 0 to 1. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>cubic-bezier function</title>
+		<style>
+			.test {
+				width: 150px;
+				height: 80px;
+				background: green;
+				transition: width 5s;
+				transition-timing-function: cubic-bezier(0.9, 0.9, 0.9, 0.9);
+			}
+			
+			div:hover {
+				width:300px;
+			}
+			.testing {
+				font-size:40px;
+				font-weight:bold;
+				color:green;
+				text-align:center;
+			}
+			h1 {
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "testing">Cubic-bezier</div>
+		<h1>The cubic-bezier() Function</h1>
+		<div class = "test"></div>
+	</body>
+</html>

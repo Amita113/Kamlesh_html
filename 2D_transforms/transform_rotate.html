@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+/* using negative values will rotate counter clock wise */
+div#myDiv {
+  /* transform: rotate(20deg);  */
+  /* transform: scale(0.5, 0.5);*/
+  /* transform: scale(2, 3);  */
+  transform:scaleX(2);
+   transform: scaleY(3);
+
+    transform: skewX(20deg);
+    
+     /* transform: skewY(20deg); */
+     /* transform: skew(20deg, 10deg); */
+ 
+}
+     
+
+  /* div {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+} */
+
+</style>
+</head>
+<body>
+
+<h1>The rotate() Method</h1>
+
+<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated clockwise 20 degrees.
+
+Using negative values will rotate the element counter-clockwise.
+</div>
+<p>The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+</p>
+
+<p>
+
+  Function	Description
+matrix(n,n,n,n,n,n)	Defines a 2D transformation, using a matrix of six values
+translate(x,y)	Defines a 2D translation, moving the element along the X- and the Y-axis
+translateX(n)	Defines a 2D translation, moving the element along the X-axis
+translateY(n)	Defines a 2D translation, moving the element along the Y-axis
+scale(x,y)	Defines a 2D scale transformation, changing the elements width and height
+scaleX(n)	Defines a 2D scale transformation, changing the element's width
+scaleY(n)	Defines a 2D scale transformation, changing the element's height
+rotate(angle)	Defines a 2D rotation, the angle is specified in the parameter
+skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis
+skewX(angle)	Defines a 2D skew transformation along the X-axis
+skewY(angle)	Defines a 2D skew transformation along the Y-axis
+</p>
+</body>
+</html>
+
+
